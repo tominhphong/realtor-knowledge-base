@@ -11,6 +11,36 @@ Ghi lại mọi thay đổi, cải tiến, và bài học học được trong q
 
 ---
 
+<Update label="2026-09-25" description="Đổi tên site + repo để đồng bộ với Dashboard" tags={["maintenance", "rename", "github"]}>
+
+## 🏷️ Đồng bộ tên dự án, site và repo
+
+Sau 5 tháng không cập nhật, đồng bộ lại tên ở cả 3 nơi cho thống nhất.
+
+| Nơi | Tên cũ | Tên mới |
+| --- | --- | --- |
+| Tên site (`documentation.json`) | Phong To — Realtor Knowledge Base | **Realtor Knowledge Base** |
+| Tên dự án trên Dashboard | Phong To | **Realtor Knowledge Base** |
+| Repo GitHub | `documentationai-documentation` | **`realtor-knowledge-base`** |
+
+**Giữ nguyên:** địa chỉ web `phong-to.documentationai.com` để không làm hỏng link đã gửi khách và connector Reader MCP.
+
+**Kiểm tra:** sau khi đổi tên repo, lần publish đầu tiên (commit `a4e74af`) đã đẩy thành công lên repo tên mới, nên kết nối Git vẫn hoạt động.
+
+### Bối cảnh
+- Đã kết nối **Authoring MCP** (`https://api.documentation.ai/mcp`) nên Claude đọc và sửa được cả 3 dự án (Realtor Knowledge Base, Realtor OS, Agent OS), mọi thay đổi đều ở dạng nháp và chờ duyệt.
+- Đã kết nối **REST API** qua API key.
+
+</Update>
+
+<Update label="2026-04-26" description="Xoá các trang mẫu của Starter Kit" tags={["cleanup", "boilerplate"]}>
+
+## 🧹 Dọn trang mẫu
+
+Xoá 12 trang mẫu còn sót lại từ Starter Kit lúc tạo dự án (`components/*`, `help-center/faq`, `help-center/guides`, `introduction`, `quickstart`) và bỏ các mục menu tương ứng. Không ảnh hưởng nội dung Realtor. **Commit:** `d94687d`.
+
+</Update>
+
 <Update label="2026-04-22" description="Sprint 5 — RKB Hygiene Sweep (keywords + sitemap + link alias + date bump)" tags={["sprint-5", "hygiene", "seo", "tooling"]}>
 
 ## 🎯 Sprint 5: RKB hygiene + SEO prep
